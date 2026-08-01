@@ -1,5 +1,6 @@
 :root {
     --surfaced-color: #f5f5f5;
+    --body-color: #ffffff;
     --font-color: #6c6c6c;;
     --text-color-primary: #36363631;
 
@@ -19,7 +20,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: var(--font-);
+    font-family: var(--text);
     background-color: var(--surfaced-color);
     color: var(--font-color);
 }
@@ -150,6 +151,7 @@ header .container {
     gap: 8px;
 }
 main {
+    background-color: var(--body-color);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -160,4 +162,13 @@ main img{
     width: 286px;
     height: 286px;
     object-fit: cover;
+}
+
+footer {
+    display: flex;
+    gap: 24px;
+    padding-block: 24px;
+}
+footer span:nth-child(1){
+    margin-right: auto;
 }
